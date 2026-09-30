@@ -1,49 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <div class="container" style="padding: 40px 15px; font-family: 'Montserrat', 'Segoe UI', sans-serif;">
-        <!-- Hero Banner -->
+    <div class="container"
+        style="padding: 40px 15px; font-family: 'Montserrat', 'Segoe UI', sans-serif; background-color: #ffffff; color: #333333;">
+
+        <!-- Premium Hero Section -->
         <div class="row"
-            style="background: linear-gradient(135deg, #714B67 0%, #4c3345 100%); padding: 50px; border-radius: 12px; color: #ffffff; text-align: center; margin-bottom: 40px;">
+            style="background: linear-gradient(135deg, #714B67 0%, #4c3345 100%); padding: 60px 30px; border-radius: 16px; color: #ffffff; text-align: center; margin-bottom: 50px; box-shadow: 0 10px 30px rgba(113, 75, 103, 0.2);">
             <div class="col-md-12">
-                <h1 style="font-size: 42px; font-weight: 700; margin-bottom: 10px;">SmartImport AI</h1>
-                <p style="font-size: 20px; font-weight: 300; opacity: 0.9;">One-Click Smart Excel/CSV Importer with
-                    Local Auto-Mapping.</p>
+                <span
+                    style="background: rgba(255, 255, 255, 0.2); padding: 6px 16px; border-radius: 50px; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">🚀
+                    Next-Gen Data Tool</span>
+                <h1
+                    style="font-size: 46px; font-weight: 800; margin-top: 15px; margin-bottom: 15px; letter-spacing: -0.5px;">
+                    SmartImport AI</h1>
+                <p
+                    style="font-size: 20px; font-weight: 300; opacity: 0.9; max-width: 800px; margin: 0 auto 30px auto; line-height: 1.6;">
+                    One-Click Intelligent Excel & CSV Importer. Experience 100% automated field mapping with zero
+                    configuration and local data privacy.
+                </p>
+                <div
+                    style="display: inline-block; background: #ffffff; color: #714B67; padding: 12px 30px; border-radius: 50px; font-size: 15px; font-weight: 700; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
+                    ⚡ Plug & Play — No Paid AI API Keys Required
+                </div>
             </div>
         </div>
 
-        <!-- LIVE GIF DEMO SECTION -->
-        <div class="row" style="margin-bottom: 40px; text-align: center;">
-            <div class="col-md-12"
-                style="background: #ffffff; padding: 20px; border-radius: 12px; border: 1px solid #e9ecef;">
-                <h3 style="font-size: 22px; font-weight: 700; color: #212529; margin-bottom: 20px;">👀 Watch SmartImport
-                    AI in Action!</h3>
-                <!-- Odoo relative path to load your Canva GIF -->
-                <img src="live-demo.gif" alt="SmartImport AI Demo"
-                    style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <!-- Section 1: Animated Demo / Main Preview -->
+        <div class="row" style="margin-bottom: 50px;">
+            <div class="col-md-12 text-center"
+                style="background: #fdfbfd; padding: 30px; border-radius: 16px; border: 1px solid #f1eaf0;">
+                <h2 style="font-size: 26px; font-weight: 700; color: #4c3345; margin-bottom: 25px;">👀 See How It Works
+                    In 5 Seconds!</h2>
+                <!-- Yeh tumhara Canva wala Animated GIF hai -->
+                <img src="live-demo.gif" alt="SmartImport AI Animated Flow"
+                    style="max-width: 100%; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.08); border: 1px solid #e9ecef;">
             </div>
         </div>
 
-        <!-- Features Grid -->
-        <div class="row" style="margin-bottom: 40px;">
-            <div class="col-md-6" style="margin-bottom: 20px;">
-                <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; border-left: 4px solid #714B67;">
-                    <h4 style="font-weight: 600;">🧠 Fuzzy Auto-Mapping</h4>
-                    <p style="font-size: 14px; color: #6c757d; margin: 0;">Automatically maps columns like 'Full Name'
-                        to Odoo fields instantly.</p>
+        <!-- Section 2: Core Value Grid -->
+        <div class="row" style="margin-bottom: 50px; gap: 20px; display: flex; justify-content: center;">
+            <div class="col-md-5"
+                style="background: #f8f9fa; padding: 30px; border-radius: 12px; border-top: 5px solid #714B67; flex: 1;">
+                <h3 style="font-size: 19px; font-weight: 700; color: #212529; margin-bottom: 12px;">🧠 Local Smart Fuzzy
+                    Mapping</h3>
+                <p style="font-size: 14px; color: #6c757d; line-height: 1.6; margin: 0;">
+                    Our offline semantic text algorithm scans your file headers and accurately maps them to Odoo
+                    technical names. It understands that 'Client Name' or 'Full Name' belongs to the `name` field
+                    instantly.
+                </p>
+            </div>
+            <div class="col-md-5"
+                style="background: #f8f9fa; padding: 30px; border-radius: 12px; border-top: 5px solid #714B67; flex: 1;">
+                <h3 style="font-size: 19px; font-weight: 700; color: #212529; margin-bottom: 12px;">🛡️ Fault-Tolerant
+                    (Skip Bad Rows)</h3>
+                <p style="font-size: 14px; color: #6c757d; line-height: 1.6; margin: 0;">
+                    Standard Odoo imports completely crash and roll back if even 1 row out of 10,000 has a small typo.
+                    SmartImport AI safely skips corrupt lines, finishes the rest of the data, and shows a detailed
+                    success log.
+                </p>
+            </div>
+        </div>
+
+        <!-- Section 3: Visual Walkthrough (3 Image Placeholders) -->
+        <div
+            style="background: #ffffff; padding: 40px 20px; border-radius: 16px; border: 1px solid #eaeaea; margin-bottom: 50px;">
+            <h2 style="font-size: 28px; font-weight: 800; color: #212529; text-align: center; margin-bottom: 40px;">
+                Step-by-Step Visual Walkthrough</h2>
+
+            <!-- Step 1 Image -->
+            <div class="row" style="margin-bottom: 40px; align-items: center; display: flex; flex-wrap: wrap;">
+                <div class="col-md-6" style="padding: 15px;">
+                    <h4 style="font-weight: 700; color: #714B67;">Step 1: Open the Intelligent Wizard</h4>
+                    <p style="color: #6c757d; font-size: 14px; line-height: 1.6;">Launch the unified import utility from
+                        any model dashboard. Simply choose your target model destination and turn on automation toggles
+                        like Auto-Clean.</p>
+                </div>
+                <div class="col-md-6" style="padding: 15px; text-align: center;">
+                    <img src="wizard.png" alt="Wizard Setup Screenshot"
+                        style="width: 100%; max-width: 450px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #ddd;">
                 </div>
             </div>
-            <div class="col-md-6" style="margin-bottom: 20px;">
-                <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; border-left: 4px solid #714B67;">
-                    <h4 style="font-weight: 600;">🛡️ Fault-Tolerant Skip</h4>
-                    <p style="font-size: 14px; color: #6c757d; margin: 0;">Skips bad formatting or corrupted lines
-                        automatically without crashing the transaction.</p>
+
+            <!-- Step 2 Image -->
+            <div class="row"
+                style="margin-bottom: 40px; align-items: center; display: flex; flex-wrap: wrap; flex-direction: row-reverse;">
+                <div class="col-md-6" style="padding: 15px;">
+                    <h4 style="font-weight: 700; color: #714B67;">Step 2: Upload File & Real-Time Auto Match</h4>
+                    <p style="color: #6c757d; font-size: 14px; line-height: 1.6;">Drag & drop any .xlsx or .csv
+                        spreadsheet. Watch our offline string matching analyze column strings instantly without sending
+                        data outside your network.</p>
                 </div>
+                <div class="col-md-6" style="padding: 15px; text-align: center;">
+                    <img src="ui.png" alt="Fuzzy Mapping Live Preview"
+                        style="width: 100%; max-width: 450px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #ddd;">
+                </div>
+            </div>
+
+            <!-- Step 3 Image -->
+            <div class="row" style="align-items: center; display: flex; flex-wrap: wrap;">
+                <div class="col-md-6" style="padding: 15px;">
+                    <h4 style="font-weight: 700; color: #714B67;">Step 3: Successful Clean Import Notification</h4>
+                    <p style="color: #6c757d; font-size: 14px; line-height: 1.6;">Get a beautiful client notification
+                        popup detailing total records successfully synced and any corrupt lines handled seamlessly.</p>
+                </div>
+                <div class="col-md-6" style="padding: 15px; text-align: center;">
+                    <img src="data_saved.png" alt="Import Notification Output"
+                        style="width: 100%; max-width: 450px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #ddd;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4: Specifications & Compatibility Table -->
+        <div class="row" style="margin-bottom: 30px;">
+            <div class="col-md-12">
+                <table class="table" style="width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 14px;">
+                    <tr style="background-color: #f8f9fa; border-bottom: 2px solid #dee2e6;">
+                        <th style="padding: 12px; text-align: left; font-weight: 700; color: #495057;">Specification
+                        </th>
+                        <th style="padding: 12px; text-align: left; font-weight: 700; color: #495057;">Details</th>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #dee2e6;">
+                        <td style="padding: 12px; font-weight: 600; color: #212529;">Supported Formats</td>
+                        <td style="padding: 12px; color: #6c757d;">Microsoft Excel (.xlsx), Comma Separated Values
+                            (.csv)</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #dee2e6;">
+                        <td style="padding: 12px; font-weight: 600; color: #212529;">Core Dependencies</td>
+                        <td style="padding: 12px; color: #6c757d;">Python Pandas, Local Fuzzy Matching Text Engine
+                            (`thefuzz`)</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #dee2e6;">
+                        <td style="padding: 12px; font-weight: 600; color: #212529;">Odoo Versions</td>
+                        <td style="padding: 12px; color: #6c757d;">Fully compatible with modern Odoo installations (v17
+                            / v18 / v19)</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
