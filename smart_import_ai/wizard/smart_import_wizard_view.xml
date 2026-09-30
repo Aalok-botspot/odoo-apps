@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Wizard form -->
+    <record id="smart_import_wizard_view_form" model="ir.ui.view">
+        <field name="name">smart.import.wizard.form</field>
+        <field name="model">smart.import.wizard</field>
+        <field name="arch" type="xml">
+            <form string="SmartImport AI">
+                <div class="alert alert-info mb-3" role="alert">
+                    <strong>Zero configuration.</strong>
+                    Pick a destination, upload your Excel or CSV file and we map the columns
+                    to the right fields automatically. Everything runs on your own server.
+                </div>
+                <group>
+                    <group string="1. Where should the data go?">
+                        <field name="model_id"
+                               placeholder="e.g. Contact, Product, Sales Order..."
+                               options="{'no_create': True, 'no_open': True}"/>
+                        <field name="res_model" invisible="not model_id"/>
+                    </group>
+                    <group string="2. Upload your file">
+                        <field name="file_name" invisible="1"/>
+                        <field name="file_data" filename="file_name" class="oe_inline"/>
+                        <div class="text-muted" colspan="2">
+                            Supported: .xlsx and .csv. The first row must contain the column headers.
+                        </div>
+                    </group>
+                </group>
+                <group string="3. Smart options">
+                    <group>
+                        <field name="skip_errors" widget="boolean_toggle"/>
+                        <field name="auto_clean" widget="boolean_toggle"/>
+                        <field name="dayfirst" widget="boolean_toggle"/>
+                    </group>
+                    <group>
+                        <div class="text-muted">
+                            <p><strong>Skip Errors:</strong> bad rows are skipped, good rows are still imported.</p>
+                            <p><strong>Auto-Clean Data:</strong> trims spaces, ignores empty cells, understands "1,200.50".</p>
+                        </div>
+                    </group>
+                </group>
+                <footer>
+                    <button name="action_analyze_and_import" type="object"
+                            string="Smart Import Now" class="btn-primary" data-hotkey="q"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel" data-hotkey="x"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action (opens the wizard in a dialog) -->
+    <record id="smart_import_wizard_action" model="ir.actions.act_window">
+        <field name="name">Smart Import Now</field>
+        <field name="res_model">smart.import.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <!-- Menus -->
+    <menuitem id="smart_import_menu_root"
+              name="SmartImport AI"
+              web_icon="smart_import_ai,static/description/icon.png"
+              groups="base.group_user"
+              sequence="90"/>
+    <menuitem id="smart_import_menu_wizard"
+              name="Smart Import Now"
+              parent="smart_import_menu_root"
+              action="smart_import_wizard_action"
+              sequence="10"/>
+
+</odoo>
