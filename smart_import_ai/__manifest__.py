@@ -11,7 +11,7 @@ Upload any Excel (.xlsx) or CSV file into any Odoo model. Column headers are
 matched automatically to the right Odoo fields using local fuzzy matching
 (pandas + thefuzz). No external API, no API key, no configuration.
     """,
-    "author": "Your Company Name",
+    "author": "Synexis-labz ai",
     "website": "https://www.yourcompany.com",
     "license": "OPL-1",
     "depends": ["base", "web"],
